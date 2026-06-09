@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "properties"
+    label: "Properties"
+    folder: "_data/properties"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "string", hint: "e.g. ₦450,000,000 or ₦18,000,000/yr" }
+      - { label: "Location", name: "location", widget: "string", hint: "e.g. Lekki, Lagos" }
+      - { label: "City", name: "city", widget: "select", options: ["Lagos", "Abuja"] }
+      - { label: "Listing Type", name: "type", widget: "select", options: ["For Sale", "For Rent"] }
+      - { label: "Bedrooms", name: "bedrooms", widget: "number" }
+      - { label: "Bathrooms", name: "bathrooms", widget: "number" }
+      - { label: "Size (sqm)", name: "size", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Additional Images", name: "gallery", widget: "list", field: { label: "Image", name: "image", widget: "image" }, required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Available", name: "available", widget: "boolean", default: true }
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_data/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Read Time", name: "readTime", widget: "string", hint: "e.g. 8 min read" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+
+  - name: "profile"
+    label: "My Profile"
+    files:
+      - label: "Profile Settings"
+        name: "profile"
+        file: "_data/profile.json"
+        fields:
+          - { label: "Profile Photo", name: "photo", widget: "image", hint: "Upload your professional headshot here" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "About Text 1", name: "about1", widget: "text" }
+          - { label: "About Text 2", name: "about2", widget: "text" }
+          - { label: "About Text 3", name: "about3", widget: "text" }
+          - { label: "Currently Accepting Clients", name: "accepting", widget: "boolean", default: true }

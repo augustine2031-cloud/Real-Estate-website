@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Augustine Apuamaga | Luxury Real Estate Consultant | Lagos & Abuja</title>
+  <meta name="description" content="Luxury Real Estate Consultant specialising in premium residential and investment properties across Lagos and Abuja. Serving high-net-worth individuals and diaspora investors." />
+  <meta name="keywords" content="luxury real estate Lagos, luxury real estate Abuja, real estate consultant Nigeria, diaspora investment Nigeria, premium property Lagos, Augustine Apuamaga" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-name">Augustine Apuamaga</span>
+        <span class="logo-tagline">Real Estate Portfolio</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#ai-solutions">AI Solutions</a></li>
+        <li><a href="#blog">Insights</a></li>
+        <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Lagos &amp; Abuja, Nigeria</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Luxury Real Estate</span>
+        <span class="hero-title-line accent">Curated for You</span>
+      </h1>
+      <p class="hero-subtitle">Premium residential and investment property advisory for high-net-worth individuals and diaspora investors across Lagos and Abuja.</p>
+      <div class="hero-actions">
+        <a href="#properties" class="btn btn-gold">View Properties</a>
+        <a href="#contact" class="btn btn-outline">Book a Consultation</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-number">10+</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number">Lagos</span><span class="stat-label">&amp; Abuja Markets</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number">HNW</span><span class="stat-label">&amp; Diaspora Clients</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image-frame">
+            <img src="images/profile.jpg" alt="Augustine Apuamaga" class="about-image" id="profileImg" onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex'" />
+            <div class="about-image-placeholder" id="profilePlaceholder"><span>AA</span></div>
+            <div class="about-image-accent"></div>
+          </div>
+          <div class="about-credentials">
+            <div class="credential"><span class="cred-icon">🏛️</span><span>International MBA<br><small>Bucks New University, UK</small></span></div>
+            <div class="credential"><span class="cred-icon">📊</span><span>BSc Economics<br><small>University of Jos</small></span></div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Finding the Right Property Starts With Understanding You</h2>
+          <p class="about-text">Finding the right luxury property isn't just about location — it's about understanding exactly what a client wants before showing them anything.</p>
+          <p class="about-text">I help high-net-worth individuals and diaspora investors find and acquire premium residential and investment properties across Lagos and Abuja, with a focus on discretion, precision, and results.</p>
+          <p class="about-text">Seven years of international business consulting across European and West African markets taught me to listen before advising. That discipline now shapes every client conversation — whether you're relocating, investing, or acquiring a second home.</p>
+          <div class="about-specialisms">
+            <div class="specialism"><div class="spec-dot"></div><span>Premium Residential Acquisition</span></div>
+            <div class="specialism"><div class="spec-dot"></div><span>Diaspora Investor Advisory</span></div>
+            <div class="specialism"><div class="spec-dot"></div><span>Off-Plan &amp; Investment-Grade Sourcing</span></div>
+            <div class="specialism"><div class="spec-dot"></div><span>Expatriate &amp; Corporate Relocation</span></div>
+          </div>
+          <a href="#contact" class="btn btn-gold">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="properties" id="properties">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Featured Properties</h2>
+        <p class="section-subtitle">A curated selection of premium residential and investment properties across Lagos and Abuja.</p>
+      </div>
+      <div class="property-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="lagos">Lagos</button>
+        <button class="filter-btn" data-filter="abuja">Abuja</button>
+        <button class="filter-btn" data-filter="sale">For Sale</button>
+        <button class="filter-btn" data-filter="rent">For Rent</button>
+      </div>
+      <div class="properties-grid" id="propertiesGrid">
+        <div class="property-card" data-location="lagos" data-type="sale">
+          <div class="property-image-wrap">
+            <div class="property-image-placeholder"><span class="prop-icon">🏡</span><span>Property Image</span></div>
+            <div class="property-badge sale">For Sale</div>
+            <div class="property-location-tag">Lekki, Lagos</div>
+          </div>
+          <div class="property-info">
+            <div class="property-price">&#8358; 450,000,000</div>
+            <h3 class="property-title">Luxury 5-Bedroom Duplex</h3>
+            <p class="property-desc">Exquisite fully-detached duplex in a serene gated estate. Swimming pool, BQ, and smart home features.</p>
+            <div class="property-specs"><span>5 Beds</span><span>6 Baths</span><span>600 sqm</span></div>
+            <a href="#contact" class="btn btn-outline-small">Enquire Now</a>
+          </div>
+        </div>
+        <div class="property-card" data-location="abuja" data-type="rent">
+          <div class="property-image-wrap">
+            <div class="property-image-placeholder"><span class="prop-icon">🏢</span><span>Property Image</span></div>
+            <div class="property-badge rent">For Rent</div>
+            <div class="property-location-tag">Maitama, Abuja</div>
+          </div>
+          <div class="property-info">
+            <div class="property-price">&#8358; 18,000,000 / yr</div>
+            <h3 class="property-title">Premium 4-Bedroom Terrace</h3>
+            <p class="property-desc">Contemporary terrace in the heart of Maitama. Ideal for diplomatic and executive clients.</p>
+            <div class="property-specs"><span>4 Beds</span><span>4 Baths</span><span>450 sqm</span></div>
+            <a href="#contact" class="btn btn-outline-small">Enquire Now</a>
+          </div>
+        </div>
+        <div class="property-card" data-location="abuja" data-type="sale">
+          <div class="property-image-wrap">
+            <div class="property-image-placeholder"><span class="prop-icon">🏰</span><span>Property Image</span></div>
+            <div class="property-badge sale">For Sale</div>
+            <div class="property-location-tag">Asokoro, Abuja</div>
+          </div>
+          <div class="property-info">
+            <div class="property-price">&#8358; 750,000,000</div>
+            <h3 class="property-title">Executive 6-Bedroom Mansion</h3>
+            <p class="property-desc">Prestigious mansion in Abuja's most exclusive district. En-suite rooms, cinema room, and landscaped grounds.</p>
+            <div class="property-specs"><span>6 Beds</span><span>7 Baths</span><span>900 sqm</span></div>
+            <a href="#contact" class="btn btn-outline-small">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="properties-cta">
+        <p>Looking for something specific? I source properties that aren't publicly listed.</p>
+        <a href="#contact" class="btn btn-gold">Request a Private Search</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-label light">What I Offer</div>
+        <h2 class="section-title light">Advisory Services</h2>
+        <p class="section-subtitle light">End-to-end real estate support tailored to your specific goals and circumstances.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon">🔍</div><h3>Property Search &amp; Acquisition</h3><p>Curated property matching across Lagos and Abuja's prime markets. I source, vet, and present only properties that genuinely fit your brief.</p></div>
+        <div class="service-card"><div class="service-icon">✈️</div><h3>Diaspora Investor Advisory</h3><p>Specialist support for Nigerians in the UK, US, Canada, and Europe investing remotely. Title verification, developer due diligence, and on-the-ground representation.</p></div>
+        <div class="service-card"><div class="service-icon">🏢</div><h3>Expatriate &amp; Corporate Relocation</h3><p>Premium residential sourcing for multinational executives, embassy staff, and corporate clients requiring fast, reliable, concierge-level housing solutions.</p></div>
+        <div class="service-card"><div class="service-icon">📋</div><h3>Transaction Support</h3><p>Full support from initial search through to documentation, lease negotiation, and move-in coordination.</p></div>
+        <div class="service-card"><div class="service-icon">📈</div><h3>Investment Property Advisory</h3><p>Off-plan and investment-grade property sourcing for clients building a Nigerian real estate portfolio. ROI analysis, developer credibility assessment, and market intelligence.</p></div>
+        <div class="service-card"><div class="service-icon">🤝</div><h3>Developer Referral Network</h3><p>Access to exclusive off-market listings and preferred pricing through an established network of vetted developers and landlords across Lagos and Abuja.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-solutions" id="ai-solutions">
+    <div class="container">
+      <div class="ai-grid">
+        <div class="ai-content">
+          <div class="section-label">Technology</div>
+          <h2 class="section-title">AI Solutions for Real Estate &amp; Hospitality Brands</h2>
+          <p class="ai-text">Beyond property advisory, I design and build custom conversational AI solutions for real estate developers, hospitality brands, and property management companies looking to modernise their client experience.</p>
+          <p class="ai-text">Every build is tailored to your specific business — your brand, your workflows, your clients. No off-the-shelf templates.</p>
+          <div class="ai-offerings">
+            <div class="ai-offering"><div class="ai-offering-icon">💬</div><div><strong>AI Chatbots for Real Estate</strong><p>Automate lead qualification, property enquiries, and client follow-up — 24/7, across your website and WhatsApp.</p></div></div>
+            <div class="ai-offering"><div class="ai-offering-icon">🎙️</div><div><strong>Voice AI Agents</strong><p>Intelligent voice assistants that handle guest interactions and booking queries for hotels, serviced apartments, and hospitality brands.</p></div></div>
+            <div class="ai-offering"><div class="ai-offering-icon">🏷️</div><div><strong>White-Label AI Platforms</strong><p>Custom-built AI platforms your brand owns entirely — deploy to clients under your own name and grow a new revenue stream.</p></div></div>
+          </div>
+          <a href="#contact" class="btn btn-gold">Discuss a Custom Build</a>
+        </div>
+        <div class="ai-visual">
+          <div class="ai-card-stack">
+            <div class="ai-card card-1">
+              <div class="ai-card-header"><span class="ai-dot"></span><span class="ai-dot"></span><span class="ai-dot"></span></div>
+              <div class="ai-chat">
+                <div class="chat-bubble user">Hi, I'm looking for a 4-bed in Maitama under &#8358;15m/yr</div>
+                <div class="chat-bubble bot">Good morning! I have 3 properties matching your brief in Maitama. Shall I send you the details?</div>
+                <div class="chat-bubble user">Yes please</div>
+                <div class="chat-bubble bot typing"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="ai-card card-2"><div class="ai-card-label">Powered by Claude · GPT-4o · Gemini</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Insights</div>
+        <h2 class="section-title">Market Intelligence &amp; Commentary</h2>
+        <p class="section-subtitle">Perspectives on the Nigerian real estate market, diaspora investment, and the future of property technology.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card featured">
+          <div class="blog-image-wrap">
+            <div class="blog-image-placeholder"><span>📰</span></div>
+            <div class="blog-category">Trust &amp; Transparency</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta"><span class="blog-date">June 2026</span><span class="blog-read">8 min read</span></div>
+            <h3 class="blog-title">Building Trust in Nigerian Real Estate: A Deep Dive Into Transparency and Ethics</h3>
+            <p class="blog-excerpt">Trust remains the single biggest barrier preventing diaspora investors from committing capital to the Nigerian real estate market. Despite $23 billion in annual remittances, billions in potential property investment remain on the sidelines...</p>
+            <a href="blog/building-trust-nigerian-real-estate.html" class="blog-link">Read Article &#8594;</a>
+          </div>
+        </article>
+        <div class="blog-sidebar">
+          <div class="blog-cta-card">
+            <h4>Stay Informed</h4>
+            <p>Get market insights, investment opportunities, and property updates directly to your inbox.</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Your email address" class="newsletter-input" />
+              <button class="btn btn-gold-small">Subscribe</button>
+            </div>
+          </div>
+          <div class="blog-topics">
+            <h4>Topics</h4>
+            <div class="topic-tags">
+              <span class="topic-tag">Lagos Real Estate</span>
+              <span class="topic-tag">Abuja Market</span>
+              <span class="topic-tag">Diaspora Investment</span>
+              <span class="topic-tag">Market Intelligence</span>
+              <span class="topic-tag">Property Law</span>
+              <span class="topic-tag">AI in Real Estate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-content">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Let's Find Your Perfect Property</h2>
+          <p class="contact-text">Whether you're buying, renting, investing from abroad, or looking to deploy AI in your real estate business — I'd love to hear from you.</p>
+          <div class="contact-details">
+            <div class="contact-item"><span class="contact-icon">📍</span><span>Lagos &amp; Abuja, Nigeria</span></div>
+            <div class="contact-item"><span class="contact-icon">📞</span><a href="tel:+2348025746453">+234 802 574 6453</a></div>
+            <div class="contact-item"><span class="contact-icon">✉️</span><a href="mailto:augustine2031@gmail.com">augustine2031@gmail.com</a></div>
+            <div class="contact-item"><span class="contact-icon">💼</span><a href="https://www.linkedin.com/in/augustine-apuamaga" target="_blank">LinkedIn Profile</a></div>
+          </div>
+          <div class="contact-availability"><div class="avail-dot"></div><span>Currently accepting new clients</span></div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required /></div>
+              <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" required /></div>
+            </div>
+            <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" placeholder="+234 or international number" /></div>
+            <div class="form-group">
+              <label>I'm interested in</label>
+              <select>
+                <option value="">Select a service</option>
+                <option>Buying a Property in Lagos</option>
+                <option>Buying a Property in Abuja</option>
+                <option>Renting in Lagos or Abuja</option>
+                <option>Diaspora Investment Advisory</option>
+                <option>Corporate / Expatriate Relocation</option>
+                <option>AI Solutions for My Business</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Message</label><textarea placeholder="Tell me what you're looking for..." rows="4"></textarea></div>
+            <button type="submit" class="btn btn-gold full-width">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-name">Augustine Apuamaga</span>
+          <span class="footer-title">Luxury Real Estate Consultant</span>
+          <p>Premium residential and investment property advisory across Lagos and Abuja. Serving high-net-worth individuals and diaspora investors with discretion and precision.</p>
+        </div>
+        <div class="footer-links"><h4>Navigation</h4><ul><li><a href="#about">About</a></li><li><a href="#properties">Properties</a></li><li><a href="#services">Services</a></li><li><a href="#ai-solutions">AI Solutions</a></li><li><a href="#blog">Insights</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div class="footer-markets"><h4>Markets</h4><ul><li>Lekki · Ikoyi · Victoria Island</li><li>Banana Island · Oniru</li><li>Maitama · Asokoro</li><li>Wuse II · Jabi · Guzape</li></ul></div>
+        <div class="footer-contact"><h4>Contact</h4><p><a href="tel:+2348025746453">+234 802 574 6453</a></p><p><a href="mailto:augustine2031@gmail.com">augustine2031@gmail.com</a></p><p><a href="https://www.linkedin.com/in/augustine-apuamaga" target="_blank">LinkedIn</a></p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Augustine Apuamaga. All rights reserved.</p><p>Luxury Real Estate · Lagos &amp; Abuja, Nigeria</p></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348025746453?text=Hello%20Augustine%2C%20I%20found%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20property." class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
