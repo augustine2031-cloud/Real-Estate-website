@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,17 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
-  <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
 <body>
 
   <nav class="navbar" id="navbar">
@@ -77,7 +65,7 @@
       <div class="about-grid">
         <div class="about-image-wrap">
           <div class="about-image-frame">
-            <img src="images/profile.jpeg" alt="Augustine Apuamaga" class="about-image" id="profileImg" onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex'" />
+            <img src="images/profile.jpg" alt="Augustine Apuamaga" class="about-image" id="profileImg" onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex'" />
             <div class="about-image-placeholder" id="profilePlaceholder"><span>AA</span></div>
             <div class="about-image-accent"></div>
           </div>
@@ -119,48 +107,61 @@
         <button class="filter-btn" data-filter="rent">For Rent</button>
       </div>
       <div class="properties-grid" id="propertiesGrid">
-        <div class="property-card" data-location="lagos" data-type="sale">
-          <div class="property-image-wrap">
-            <div class="property-image-placeholder"><span class="prop-icon">🏡</span><span>Property Image</span></div>
-            <div class="property-badge sale">For Sale</div>
-            <div class="property-location-tag">Lekki, Lagos</div>
-          </div>
-          <div class="property-info">
-            <div class="property-price">&#8358; 450,000,000</div>
-            <h3 class="property-title">Luxury 5-Bedroom Duplex</h3>
-            <p class="property-desc">Exquisite fully-detached duplex in a serene gated estate. Swimming pool, BQ, and smart home features.</p>
-            <div class="property-specs"><span>5 Beds</span><span>6 Baths</span><span>600 sqm</span></div>
-            <a href="#contact" class="btn btn-outline-small">Enquire Now</a>
-          </div>
-        </div>
-        <div class="property-card" data-location="abuja" data-type="rent">
-          <div class="property-image-wrap">
-            <div class="property-image-placeholder"><span class="prop-icon">🏢</span><span>Property Image</span></div>
-            <div class="property-badge rent">For Rent</div>
-            <div class="property-location-tag">Maitama, Abuja</div>
-          </div>
-          <div class="property-info">
-            <div class="property-price">&#8358; 18,000,000 / yr</div>
-            <h3 class="property-title">Premium 4-Bedroom Terrace</h3>
-            <p class="property-desc">Contemporary terrace in the heart of Maitama. Ideal for diplomatic and executive clients.</p>
-            <div class="property-specs"><span>4 Beds</span><span>4 Baths</span><span>450 sqm</span></div>
-            <a href="#contact" class="btn btn-outline-small">Enquire Now</a>
-          </div>
-        </div>
+
+        <!-- Chateaux by Cosgrove -->
         <div class="property-card" data-location="abuja" data-type="sale">
           <div class="property-image-wrap">
-            <div class="property-image-placeholder"><span class="prop-icon">🏰</span><span>Property Image</span></div>
+            <img src="images/chateaux.jpg" alt="The Chateaux by Cosgrove" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="property-image-placeholder" style="display:none"><span class="prop-icon">🏰</span><span>The Chateaux by Cosgrove</span></div>
             <div class="property-badge sale">For Sale</div>
-            <div class="property-location-tag">Asokoro, Abuja</div>
+            <div class="property-location-tag">Abuja — Cosgrove</div>
           </div>
           <div class="property-info">
-            <div class="property-price">&#8358; 750,000,000</div>
-            <h3 class="property-title">Executive 6-Bedroom Mansion</h3>
-            <p class="property-desc">Prestigious mansion in Abuja's most exclusive district. En-suite rooms, cinema room, and landscaped grounds.</p>
-            <div class="property-specs"><span>6 Beds</span><span>7 Baths</span><span>900 sqm</span></div>
+            <div class="property-developer-tag">Cosgrove</div>
+            <div class="property-price">&#8358; 2,500,000,000</div>
+            <h3 class="property-title">The Ch&#226;teaux by Cosgrove</h3>
+            <p class="property-desc">An extraordinary residence conceived as a blend of tradition and cutting-edge technology. Originally envisioned as residences for the nobility — sophisticated, elegant, and uncompromising in quality at every level. For those who, having experienced high quality, have decided that nothing less is acceptable.</p>
+            <div class="property-specs"><span>Luxury Villa</span><span>Smart Home</span><span>Gated Estate</span></div>
             <a href="#contact" class="btn btn-outline-small">Enquire Now</a>
           </div>
         </div>
+
+        <!-- Oak Mabushi by Cosgrove -->
+        <div class="property-card" data-location="abuja" data-type="sale">
+          <div class="property-image-wrap">
+            <img src="images/oak-mabushi.jpg" alt="Oak Mabushi by Cosgrove" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="property-image-placeholder" style="display:none"><span class="prop-icon">🏡</span><span>Oak Mabushi — Cosgrove</span></div>
+            <div class="property-badge sale">For Sale</div>
+            <div class="property-location-tag">Mabushi, Abuja</div>
+          </div>
+          <div class="property-info">
+            <div class="property-developer-tag">Cosgrove</div>
+            <div class="property-price">&#8358; 750,000,000</div>
+            <h3 class="property-title">Oak — Cosgrove Smart Estate Mabushi</h3>
+            <p class="property-desc">A 5-bedroom fully detached smart duplex with maid's room, set within Cosgrove Smart Estate Mabushi — 22 exclusive units in a serene, secure location with quick access to Shehu Yar'adua Way and Nnamdi Azikiwe Expressway. Uninterrupted power, AI-enabled CCTV, central water heating, and premium finishes throughout.</p>
+            <div class="property-specs"><span>5 Beds</span><span>All En-Suite</span><span>BQ Included</span></div>
+            <a href="#contact" class="btn btn-outline-small">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Urban Shelter Stay & Pay -->
+        <div class="property-card" data-location="abuja" data-type="sale">
+          <div class="property-image-wrap">
+            <img src="images/urban-shelter-stay-pay.jpg" alt="Urban Shelter Stay and Pay Scheme" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="property-image-placeholder" style="display:none"><span class="prop-icon">🏢</span><span>Urban Shelter — Stay &amp; Pay</span></div>
+            <div class="property-badge" style="background:#1B3A6B;color:#C9A84C;">Flexible Plan</div>
+            <div class="property-location-tag">Abuja — Urban Shelter</div>
+          </div>
+          <div class="property-info">
+            <div class="property-developer-tag">Urban Shelter</div>
+            <div class="property-price">Price on Request</div>
+            <h3 class="property-title">Stay &amp; Pay Scheme — Urban Shelter</h3>
+            <p class="property-desc">Move into your new home in year two after just a 30% deposit — and complete your payments over 5 years. Urban Shelter's Stay &amp; Pay scheme makes premium Abuja property ownership accessible without waiting for full payment. Ideal for diaspora investors and corporate buyers seeking structured acquisition with immediate occupancy rights.</p>
+            <div class="property-specs"><span>5-Year Plan</span><span>Move In Yr 2</span><span>30% Deposit</span></div>
+            <a href="#contact" class="btn btn-outline-small">Enquire Now</a>
+          </div>
+        </div>
+
       </div>
       <div class="properties-cta">
         <p>Looking for something specific? I source properties that aren't publicly listed.</p>
@@ -281,7 +282,7 @@
           <div class="contact-availability"><div class="avail-dot"></div><span>Currently accepting new clients</span></div>
         </div>
         <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
+          <form class="contact-form" id="contactForm">
             <div class="form-row">
               <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required /></div>
               <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" required /></div>
@@ -317,7 +318,18 @@
           <p>Premium residential and investment property advisory across Lagos and Abuja. Serving high-net-worth individuals and diaspora investors with discretion and precision.</p>
         </div>
         <div class="footer-links"><h4>Navigation</h4><ul><li><a href="#about">About</a></li><li><a href="#properties">Properties</a></li><li><a href="#services">Services</a></li><li><a href="#ai-solutions">AI Solutions</a></li><li><a href="#blog">Insights</a></li><li><a href="#contact">Contact</a></li></ul></div>
-        <div class="footer-markets"><h4>Markets</h4><ul><li>Lekki · Ikoyi · Victoria Island</li><li>Banana Island · Oniru</li><li>Maitama · Asokoro</li><li>Wuse II · Jabi · Guzape</li></ul></div>
+        <div class="footer-partners"><h4>Developer Partners</h4>
+          <div class="partner-logos">
+            <div class="partner-logo-wrap">
+              <img src="https://cosgroveafrica.com/assets/images/logo.png" alt="Cosgrove" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+              <span class="partner-logo-fallback" style="display:none">Cosgrove</span>
+            </div>
+            <div class="partner-logo-wrap">
+              <img src="https://urbanshelternigeria.com/wp-content/uploads/2021/03/urban-shelter-logo.png" alt="Urban Shelter" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+              <span class="partner-logo-fallback" style="display:none">Urban Shelter</span>
+            </div>
+          </div>
+        </div>
         <div class="footer-contact"><h4>Contact</h4><p><a href="tel:+2348025746453">+234 802 574 6453</a></p><p><a href="mailto:augustine2031@gmail.com">augustine2031@gmail.com</a></p><p><a href="https://www.linkedin.com/in/augustine-apuamaga" target="_blank">LinkedIn</a></p></div>
       </div>
       <div class="footer-bottom"><p>&copy; 2026 Augustine Apuamaga. All rights reserved.</p><p>Luxury Real Estate · Lagos &amp; Abuja, Nigeria</p></div>
