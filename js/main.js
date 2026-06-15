@@ -31,7 +31,8 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 
 // Contact form
 document.getElementById('contactForm')?.addEventListener('submit', (e) => {
-  e.preventDefault();
+  const btn = e.target.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending...';
   const btn = e.target.querySelector('button[type="submit"]');
   btn.textContent = 'Message Sent ✓';
   btn.style.background = '#22C55E';
