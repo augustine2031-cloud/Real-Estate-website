@@ -246,10 +246,11 @@
           <div class="blog-cta-card">
             <h4>Stay Informed</h4>
             <p>Get market insights, investment opportunities, and property updates directly to your inbox.</p>
-            <div class="newsletter-form">
-              <input type="email" placeholder="Your email address" class="newsletter-input" />
-              <button class="btn btn-gold-small">Subscribe</button>
-            </div>
+            <form name="newsletter" method="POST" data-netlify="true" style="display:flex;flex-direction:column;gap:0.5rem;">
+  <input type="hidden" name="form-name" value="newsletter" />
+  <input type="email" name="email" placeholder="Your email address" class="newsletter-input" required />
+  <button type="submit" class="btn btn-gold-small">Subscribe</button>
+</form>
           </div>
           <div class="blog-topics">
             <h4>Topics</h4>
